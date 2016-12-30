@@ -10,7 +10,7 @@ import * as KoaBody from 'koa-better-body';
 
 // Classes
 import { Response } from './classes/Response';
-import { CustomError } from './classes/CustomError';
+import { InternalError } from './classes/InternalError';
 
 // Object inits
 const debug = Debug('colwyn:main');
@@ -23,8 +23,8 @@ app.use(function* globalError(next: any) {
     try {
         yield next;
     } catch (err) {
-        const customErr = new CustomError(err.message);
-        customErr.debugError(this.request);
+        const internalErr = new InternalError(err.message);
+        internalErr.debugError(this.request);
         this.status = 500;
         this.body = 'Internal server error: ' + err.message;
     }

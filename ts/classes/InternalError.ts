@@ -1,7 +1,7 @@
 import { Request } from 'koa';
 const debug = require('debug')('colwyn:classes:error');
 
-export class CustomError extends Error {
+export class InternalError extends Error {
     constructor(message: string) {
         super(message);
     }
