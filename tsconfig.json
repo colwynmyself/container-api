@@ -4,6 +4,8 @@
         "baseUrl": "ts/",
         "diagnostics": true,
         "forceConsistentCasingInFileNames": true,
+        "listEmittedFiles": true,
+        "listFiles": true,
         "module": "commonjs",
         "moduleResolution": "node",
         "noImplicitReturns": true,
