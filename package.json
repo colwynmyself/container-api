@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/colwynmyself/container-api#readme",
   "dependencies": {
-    "chalk": "^1.1.3",
+    "chalk": "^2.0.0",
     "debug": "^2.5.1",
     "koa": "^1.2.4",
     "koa-better-body": "^3.0.2",
